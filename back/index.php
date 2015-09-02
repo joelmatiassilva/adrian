@@ -7,7 +7,7 @@ $app->get('/', function() use($app) {
     $app->response->setStatus(200);
 }); 
 
-$app->get('/getScore/:id', function ($id) {
+$app->get('/usuario/:id', function ($id) {
 
 });
 
