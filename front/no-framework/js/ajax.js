@@ -9,7 +9,7 @@ var PARAM_PASS = "contra=";
 var ajax = (function () {
     var done = 4, ok = 200;
 
-    function send(url, parameters) {
+    function enviar(url, parameters) {
 
         var XHR = new XMLHttpRequest();
         var p = Promise();
@@ -32,7 +32,7 @@ var ajax = (function () {
     }
 
     return {
-        send: send
+        send: enviar
     };
 
 }());
