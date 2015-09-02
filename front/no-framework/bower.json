@@ -1,0 +1,17 @@
+{
+  "name": "no-framework",
+  "version": "0.0.0",
+  "homepage": "https://github.com/joelmatiassilva/adrian",
+  "authors": [
+    "Joel Silva <joelsilva_87@hotmail.com>"
+  ],
+  "description": "crud",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
