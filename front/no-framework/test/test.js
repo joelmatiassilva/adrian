@@ -20,7 +20,7 @@ describe('Datos Fecha Formato', function() {
 
 describe('Registracion - Ajax', function() {
 
-	it('Envio joel recibo joel', function() {
+	it('Envio datos recibo 200', function() {
 		var auth = new Auth();
 		auth.signup(datos).entonces(function(v){
 			expect(v).to.equal('200');
