@@ -11,7 +11,7 @@ Gulpjs
 Mochajs
 Angualarjs
 SlimFramework
-Boostrap
+bootstrap
 
 
 
