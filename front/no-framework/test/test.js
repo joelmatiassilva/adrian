@@ -18,13 +18,21 @@ describe('Datos Fecha Formato', function() {
 
 });
 
-describe('Registracion - Ajax', function() {
+describe('Auth - Ajax', function() {
 
 	it('Envio datos recibo 200', function() {
 		var auth = new Auth();
 		auth.signup(datos).entonces(function(v){
 			expect(v).to.equal('200');
 		});
+
+	});
+	
+	it('Hago Login recibo 200', function() {
+
+	});
+
+	it('Hago Logout recibo 200', function() {
 
 	});
 
