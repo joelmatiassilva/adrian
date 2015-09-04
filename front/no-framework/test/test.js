@@ -19,9 +19,8 @@ describe('Datos Fecha Formato', function() {
 });
 
 describe('Auth - Ajax', function() {
-
+	var auth = new Auth();
 	it('Envio datos recibo 200', function() {
-		var auth = new Auth();
 		auth.signup(datos).entonces(function(d){
 			expect(JSON.parse(d).code).to.equal('200');
 		});
@@ -29,11 +28,15 @@ describe('Auth - Ajax', function() {
 	});
 	
 	it('Hago Login recibo 200', function() {
-
+		//auth.login(datos).entonces(function(d){
+		//	expect('203').to.equal('200');
+		//});
 	});
 
 	it('Hago Logout recibo 200', function() {
-
+		//auth.logout(datos).entonces(function(d){
+		//	expect(JSON.parse(d).code).to.equal('200');
+		//});
 	});
 
 

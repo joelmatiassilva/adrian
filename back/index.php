@@ -15,12 +15,12 @@ $db = new NotORM($pdo);
 $app->response()->header("Content-Type", "application/json");
 
 
-$app->get('/', function() use($app) {
-    $app->response->setStatus(200);
+$app->get('/login', function() use($app) {
+ echo json_encode(array("code" => '202')); 
 }); 
 
-$app->get('/usuario/:id', function ($id) {
-
+$app->get('/logout', function() use($app) {
+  echo json_encode(array("code" => '202')); 
 });
 
 
