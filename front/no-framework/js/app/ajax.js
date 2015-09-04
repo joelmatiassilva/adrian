@@ -9,24 +9,25 @@ var PARAM_PASS = "contra=";
 var ajax = (function () {
     var done = 4, ok = 200;
 
-    function enviar(url, parameters) {
+    function enviar(url, parametros, metodo) {
 
         var XHR = new XMLHttpRequest();
         var p = Promise();
 
-        if (parameters === false || parameters === null || parameters === undefined) {
-            parameters = "";
+        if (parametros === false || parametros === null || parametros === undefined) {
+            parametros = "";
         }
 
-        XHR.open("post", url, true);
-        XHR.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+        XHR.open(metodo, url, true);
+        XHR.setRequestHeader("content-type", "application/json;charset=UTF-8");
         XHR.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         XHR.onreadystatechange = function () {
             if (XHR.readyState === done && XHR.status === ok) {
                 p.mantener(XHR.responseText);
             }
         };
-        XHR.send(parameters);
+        console.log(parametros);
+        XHR.send(JSON.stringify(parametros));
 
         return p.compartir;
     }

@@ -22,8 +22,8 @@ describe('Auth - Ajax', function() {
 
 	it('Envio datos recibo 200', function() {
 		var auth = new Auth();
-		auth.signup(datos).entonces(function(v){
-			expect(v).to.equal('200');
+		auth.signup(datos).entonces(function(d){
+			expect(JSON.parse(d).code).to.equal('200');
 		});
 
 	});
